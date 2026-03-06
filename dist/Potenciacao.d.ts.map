@@ -1,1 +1,1 @@
-{"version":3,"file":"Potenciacao.d.ts","sourceRoot":"","sources":["../src/Potenciacao.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAA;AAEnC,qBAAa,WAAY,SAAQ,OAAO;IAEpC,QAAQ,IAAI,MAAM;CAIrB"}
+{"version":3,"file":"Potenciacao.d.ts","sourceRoot":"","sources":["../src/Potenciacao.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,cAAc,CAAA;AAEtC,qBAAa,WAAY,SAAQ,OAAO;IAEpC,QAAQ,IAAI,MAAM;CAIrB"}

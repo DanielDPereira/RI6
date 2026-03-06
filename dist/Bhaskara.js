@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Bhaskara = void 0;
-class Bhaskara {
+export class Bhaskara {
     a;
     b;
     c;
@@ -20,5 +17,4 @@ class Bhaskara {
         return `X1 = ${x1} e X2 = ${x2}`;
     }
 }
-exports.Bhaskara = Bhaskara;
 //# sourceMappingURL=Bhaskara.js.map

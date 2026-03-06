@@ -1,13 +1,13 @@
 import * as readline from "readline"
 
-import { Soma } from "./Soma"
-import { Subtracao } from "./Subtracao"
-import { Multiplicacao } from "./Multiplicacao"
-import { Divisao } from "./Divisao"
-import { Potenciacao } from "./Potenciacao"
-import { Radiciacao } from "./Radiciacao"
-import { Mensagens } from "./Mensagens"
-import { Bhaskara } from "./Bhaskara"
+import { Soma } from "./Soma.js"
+import { Subtracao } from "./Subtracao.js"
+import { Multiplicacao } from "./Multiplicacao.js"
+import { Divisao } from "./Divisao.js"
+import { Potenciacao } from "./Potenciacao.js"
+import { Radiciacao } from "./Radiciacao.js"
+import { Mensagens } from "./Mensagens.js"
+import { Bhaskara } from "./Bhaskara.js"
 
 const rl = readline.createInterface({
     input: process.stdin,

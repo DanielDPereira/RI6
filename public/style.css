@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.calculator {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-button {
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.tab-button:hover {
+    color: #667eea;
+}
+
+.tab-button.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.operation-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-soma {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    grid-column: 1;
+}
+
+.btn-subtracao {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    grid-column: 2;
+}
+
+.btn-multiplicacao {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    grid-column: 1;
+}
+
+.btn-divisao {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    grid-column: 2;
+}
+
+.btn-potenciacao {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    grid-column: 1;
+}
+
+.btn-radiciacao {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    grid-column: 2;
+}
+
+.btn-bhaskara {
+    width: 100%;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+    margin-top: 15px;
+}
+
+.resultado {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0;
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultadoTexto {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    word-break: break-word;
+}
+
+.historico {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.historico h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#historicopacientes {
+    list-style: none;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+#historicopacientes li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    font-size: 13px;
+}
+
+#historicopacientes li:last-child {
+    border-bottom: none;
+}
+
+.btn-limpar {
+    width: 100%;
+    background: #999;
+    font-size: 13px;
+}
+
+.btn-limpar:hover {
+    background: #777;
+}
+
+.info {
+    background: #e7f5ff;
+    color: #0066cc;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0066cc;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .calculator {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .operation-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        padding: 12px;
+    }
+
+    .tab-button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}

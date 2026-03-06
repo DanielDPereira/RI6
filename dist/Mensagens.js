@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Mensagens = Mensagens;
-function Mensagens() {
+export function Mensagens() {
     console.log("=== CALCULADORA ===");
     console.log("1 - Soma");
     console.log("2 - Subtração");

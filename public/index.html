@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Interface Gráfica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculadora</h1>
+            
+            <div class="tabs">
+                <button class="tab-button active" data-tab="operacoes">Operações Básicas</button>
+                <button class="tab-button" data-tab="bhaskara">Bhaskara</button>
+            </div>
+
+            <!-- Aba de Operações Básicas -->
+            <div id="operacoes" class="tab-content active">
+                <div class="input-group">
+                    <label for="numero1">Primeiro Número:</label>
+                    <input type="number" id="numero1" placeholder="Digite um número" step="any">
+                </div>
+
+                <div class="input-group">
+                    <label for="numero2">Segundo Número:</label>
+                    <input type="number" id="numero2" placeholder="Digite um número" step="any">
+                </div>
+
+                <div class="operation-buttons">
+                    <button class="btn btn-soma" onclick="calcular('soma')">➕ Soma</button>
+                    <button class="btn btn-subtracao" onclick="calcular('subtracao')">➖ Subtração</button>
+                    <button class="btn btn-multiplicacao" onclick="calcular('multiplicacao')">✕ Multiplicação</button>
+                    <button class="btn btn-divisao" onclick="calcular('divisao')">÷ Divisão</button>
+                    <button class="btn btn-potenciacao" onclick="calcular('potenciacao')">^️ Potenciação</button>
+                    <button class="btn btn-radiciacao" onclick="calcular('radiciacao')">√ Radiciação</button>
+                </div>
+            </div>
+
+            <!-- Aba de Bhaskara -->
+            <div id="bhaskara" class="tab-content">
+                <p class="info">Resolve equações quadráticas da forma: ax² + bx + c = 0</p>
+                
+                <div class="input-group">
+                    <label for="coefA">Coeficiente A (quadrático):</label>
+                    <input type="number" id="coefA" placeholder="Digite o coeficiente A" step="any">
+                </div>
+
+                <div class="input-group">
+                    <label for="coefB">Coeficiente B (linear):</label>
+                    <input type="number" id="coefB" placeholder="Digite o coeficiente B" step="any">
+                </div>
+
+                <div class="input-group">
+                    <label for="coefC">Coeficiente C (constante):</label>
+                    <input type="number" id="coefC" placeholder="Digite o coeficiente C" step="any">
+                </div>
+
+                <button class="btn btn-bhaskara" onclick="calcularBhaskara()">🔍 Calcular Bhaskara</button>
+            </div>
+
+            <!-- Resultado -->
+            <div id="resultado" class="resultado">
+                <p id="resultadoTexto">Resultado aparecerá aqui</p>
+            </div>
+
+            <!-- Histórico -->
+            <div class="historico">
+                <h3>Histórico de Cálculos</h3>
+                <ul id="historicopacientes">
+                    <li>Nenhum cálculo realizado ainda</li>
+                </ul>
+                <button class="btn btn-limpar" onclick="limparHistorico()">Limpar Histórico</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

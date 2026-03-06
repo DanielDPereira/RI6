@@ -1,1 +1,1 @@
-{"version":3,"file":"Potenciacao.js","sourceRoot":"","sources":["../src/Potenciacao.ts"],"names":[],"mappings":";;;AAAA,uCAAmC;AAEnC,MAAa,WAAY,SAAQ,iBAAO;IAEpC,QAAQ;QACJ,OAAO,IAAI,CAAC,GAAG,CAAC,IAAI,CAAC,OAAO,EAAE,IAAI,CAAC,OAAO,CAAC,CAAA;IAC/C,CAAC;CAEJ;AAND,kCAMC"}
+{"version":3,"file":"Potenciacao.js","sourceRoot":"","sources":["../src/Potenciacao.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,cAAc,CAAA;AAEtC,MAAM,OAAO,WAAY,SAAQ,OAAO;IAEpC,QAAQ;QACJ,OAAO,IAAI,CAAC,GAAG,CAAC,IAAI,CAAC,OAAO,EAAE,IAAI,CAAC,OAAO,CAAC,CAAA;IAC/C,CAAC;CAEJ"}

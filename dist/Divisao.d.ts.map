@@ -1,1 +1,1 @@
-{"version":3,"file":"Divisao.d.ts","sourceRoot":"","sources":["../src/Divisao.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAA;AAEnC,qBAAa,OAAQ,SAAQ,OAAO;IAEhC,QAAQ,IAAI,MAAM;CAIrB"}
+{"version":3,"file":"Divisao.d.ts","sourceRoot":"","sources":["../src/Divisao.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,cAAc,CAAA;AAEtC,qBAAa,OAAQ,SAAQ,OAAO;IAEhC,QAAQ,IAAI,MAAM;CAIrB"}

@@ -1,1 +1,1 @@
-{"version":3,"file":"Soma.d.ts","sourceRoot":"","sources":["../src/Soma.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAA;AAEnC,qBAAa,IAAK,SAAQ,OAAO;IAE7B,QAAQ,IAAI,MAAM;CAIrB"}
+{"version":3,"file":"Soma.d.ts","sourceRoot":"","sources":["../src/Soma.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,cAAc,CAAA;AAEtC,qBAAa,IAAK,SAAQ,OAAO;IAE7B,QAAQ,IAAI,MAAM;CAIrB"}

@@ -1,4 +1,4 @@
-import { Calculo } from "./Calculo"
+import { Calculo } from "./Calculo.js"
 
 export class Subtracao extends Calculo{
 
