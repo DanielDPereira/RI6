@@ -1,0 +1,1 @@
+{"version":3,"file":"Calculo.d.ts","sourceRoot":"","sources":["../src/Calculo.ts"],"names":[],"mappings":"AAAA,8BAAsB,OAAO;IAEzB,SAAS,CAAC,OAAO,EAAE,MAAM,CAAA;IACzB,SAAS,CAAC,OAAO,EAAE,MAAM,CAAA;gBAEb,OAAO,EAAE,MAAM,EAAE,OAAO,EAAE,MAAM;IAK5C,QAAQ,CAAC,QAAQ,IAAI,MAAM;CAC9B"}

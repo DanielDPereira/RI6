@@ -47,6 +47,10 @@ rl.question("Escolha uma opção: ", (opcao)=>{
                 case "6":
                     resultado = new Radiciacao(Number(n1), Number(n2)).calcular()
                     break
+
+                case "0":
+                    console.log("Saindo...")
+                    rl.close()
             }
 
             console.log("O resultado da operação é:", resultado)
