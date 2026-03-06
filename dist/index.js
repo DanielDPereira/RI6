@@ -41,41 +41,55 @@ const Divisao_1 = require("./Divisao");
 const Potenciacao_1 = require("./Potenciacao");
 const Radiciacao_1 = require("./Radiciacao");
 const Mensagens_1 = require("./Mensagens");
+const Bhaskara_1 = require("./Bhaskara");
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 (0, Mensagens_1.Mensagens)();
 rl.question("Escolha uma opção: ", (opcao) => {
-    rl.question("Digite o primeiro número: ", (n1) => {
-        rl.question("Digite o segundo número: ", (n2) => {
-            let resultado = 0;
-            switch (opcao) {
-                case "1":
-                    resultado = new Soma_1.Soma(Number(n1), Number(n2)).calcular();
-                    break;
-                case "2":
-                    resultado = new Subtracao_1.Subtracao(Number(n1), Number(n2)).calcular();
-                    break;
-                case "3":
-                    resultado = new Multiplicacao_1.Multiplicacao(Number(n1), Number(n2)).calcular();
-                    break;
-                case "4":
-                    resultado = new Divisao_1.Divisao(Number(n1), Number(n2)).calcular();
-                    break;
-                case "5":
-                    resultado = new Potenciacao_1.Potenciacao(Number(n1), Number(n2)).calcular();
-                    break;
-                case "6":
-                    resultado = new Radiciacao_1.Radiciacao(Number(n1), Number(n2)).calcular();
-                    break;
-                case "0":
-                    console.log("Saindo...");
+    if (opcao == "7") {
+        rl.question("Digite A: ", (a) => {
+            rl.question("Digite B: ", (b) => {
+                rl.question("Digite C: ", (c) => {
+                    const bh = new Bhaskara_1.Bhaskara(Number(a), Number(b), Number(c));
+                    console.log(bh.calcularBhaskara());
                     rl.close();
-            }
-            console.log("O resultado da operação é:", resultado);
-            rl.close();
+                });
+            });
         });
-    });
+    }
+    else {
+        rl.question("Digite o primeiro número: ", (n1) => {
+            rl.question("Digite o segundo número: ", (n2) => {
+                let resultado = 0;
+                switch (opcao) {
+                    case "1":
+                        resultado = new Soma_1.Soma(Number(n1), Number(n2)).calcular();
+                        break;
+                    case "2":
+                        resultado = new Subtracao_1.Subtracao(Number(n1), Number(n2)).calcular();
+                        break;
+                    case "3":
+                        resultado = new Multiplicacao_1.Multiplicacao(Number(n1), Number(n2)).calcular();
+                        break;
+                    case "4":
+                        resultado = new Divisao_1.Divisao(Number(n1), Number(n2)).calcular();
+                        break;
+                    case "5":
+                        resultado = new Potenciacao_1.Potenciacao(Number(n1), Number(n2)).calcular();
+                        break;
+                    case "6":
+                        resultado = new Radiciacao_1.Radiciacao(Number(n1), Number(n2)).calcular();
+                        break;
+                    case "0":
+                        console.log("Saindo...");
+                        rl.close();
+                }
+                console.log("O resultado da operação é:", resultado);
+                rl.close();
+            });
+        });
+    }
 });
 //# sourceMappingURL=index.js.map

@@ -7,6 +7,7 @@ import { Divisao } from "./Divisao"
 import { Potenciacao } from "./Potenciacao"
 import { Radiciacao } from "./Radiciacao"
 import { Mensagens } from "./Mensagens"
+import { Bhaskara } from "./Bhaskara"
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -16,6 +17,22 @@ const rl = readline.createInterface({
 Mensagens()
 
 rl.question("Escolha uma opção: ", (opcao)=>{
+
+    if(opcao == "7"){
+
+        rl.question("Digite A: ", (a)=>{
+        rl.question("Digite B: ", (b)=>{
+        rl.question("Digite C: ", (c)=>{
+
+            const bh = new Bhaskara(Number(a), Number(b), Number(c))
+            console.log(bh.calcularBhaskara())
+
+            rl.close()
+        })
+        })
+        })
+
+    }else{
 
         rl.question("Digite o primeiro número: ", (n1)=>{
         rl.question("Digite o segundo número: ", (n2)=>{
@@ -62,4 +79,4 @@ rl.question("Escolha uma opção: ", (opcao)=>{
 
     }
 
-)
+})

@@ -9,6 +9,7 @@ function Mensagens() {
     console.log("4 - Divisão");
     console.log("5 - Potenciação");
     console.log("6 - Radiciação");
+    console.log("7 - Equação quadrática");
     console.log("0 - Sair");
 }
 //# sourceMappingURL=Mensagens.js.map
